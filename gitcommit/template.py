@@ -5,6 +5,7 @@ template = """# Your smart git commit message by igit commmit
 {% if remote and remote.next_task %}
 {{ remote.next_task }}
 {% endif %}
+
 {% if code.changed_funcs or code.added_funcs or code.removed_funcs %}
 # Here is the list of changed functions:
 {% if code.changed_funcs %}
